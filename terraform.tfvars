@@ -1,2 +1,2 @@
-ibmcloud_api_key = "mNzaCvb2iPOY32303j0fB1KhQ3buRQYwzeg0mGHnuRRQ"
+ibmcloud_api_key = ""
 region = "eu-de"
