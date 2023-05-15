@@ -14,6 +14,7 @@ module "resource_group" {
   source = "cloud-native-toolkit/resource-group/ibm"
 
   resource_group_name = ibm_resource_group.cos_group.name
+  ibmcloud_api_key    = var.ibmcloud_api_key
 }
 
 module "watsonstudio" {
