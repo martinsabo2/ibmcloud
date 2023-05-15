@@ -10,6 +10,12 @@ resource "ibm_resource_instance" "cos_instance" {
   location          = "global"
 }
 
+module "resource_group" {
+  source = "cloud-native-toolkit/resource-group/ibm"
+
+  resource_group_name = ibm_resource_group.cos_group.name
+}
+
 module "watsonstudio" {
   source = "github.com/ibm-garage-cloud/terraform-service-watsonstudio"
 
